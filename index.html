@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+
+<body>
+    <script>
+        // Get weight and height from the user
+
+        var weight = +prompt("Enter your weight in kg:");
+
+        // Get height in feet and inches
+        var feet = +prompt("Enter your height (feet):");
+        var inches = +prompt("Enter additional inches:");
+
+        // Convert height to meters
+        var heightInMeters = (feet * 0.3048) + (inches * 0.0254);
+
+
+
+        // Calculate BMI
+        var bmi = weight / (heightInMeters * heightInMeters);
+
+
+        // Display result
+        document.write("<h1>BMI Detail</h1>");
+        document.write("<h2>Your BMI is :</strong> " + bmi.toFixed(2)+"</h1>");
+    </script>
+</body>
+
+</html>
